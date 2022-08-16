@@ -1,0 +1,14 @@
+This program uses item_iter to read Sales_item transactions from cin. It uses
+out_iter to write the resulting sums to cout, following each output with a newline.
+Having defined our iterators, we use item_iter to initialize sum with the value of
+the first transaction:
+Click here to view code image
+// store the first transaction in sum and read the next record
+Sales_item sum = *item_iter++;
+Here, we dereference the result of the postfix increment on item_iter. This
+expression reads the next transaction, and initializes sum from the value previously
+stored in item_iter.
+The while loop executes until we hit end-of-file on cin. Inside the while, we check
+whether sum and the record we just read refer to the same book. If so, we add the
+most recently read Sales_item into sum. If the ISBNs differ, we assign sum to
+out_iter, which prints the current value of sum followed by a newline. Having

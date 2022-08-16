@@ -1,0 +1,106 @@
+
+
+//n = 1;sd
+  for(size_t i = 0; i != v.size(); ++i)
+    subsets.insert(set<int>{v[i]});
+
+  //n = 2;
+  for(size_t i = 0; i != v.size(); ++i)
+    for(size_t j = i + 1; j!= v.size(); ++j)
+      subsets.insert(set<int>{v[i], v[j]});
+
+  //n = 3
+  for(size_t i = 0; i != v.size(); ++i)
+      for(size_t j = i + 1; j!= v.size(); ++j)
+        for(size_t k = i + 2; k!= v.size(); ++k)
+          subsets.insert(set<int>{v[i], v[j], v[k]});
+
+  //n=4
+  for(size_t i = 0; i != v.size(); ++i)
+      for(size_t j = i + 1; j!= v.size(); ++j)
+        for(size_t k = i + 2; k!= v.size(); ++k)
+          for(size_t l = i + 3; l!= v.size(); ++l)
+            subsets.insert(set<int>{v[i], v[j], v[k], v[l]});
+
+  for(size_t i = 0; i != v.size(); ++i)
+      for(size_t j = i + 1; j!= v.size(); ++j)
+        for(size_t k = i + 2; k!= v.size(); ++k)
+          for(size_t l = i + 3; l!= v.size(); ++l)
+            for(size_t m = i + 4; m!= v.size(); ++m)
+              subsets.insert(set<int>{v[i], v[j], v[k], v[l], v[m]});
+
+
+
+for(size_t i = 0; i <= v.size(); ++i){
+    for(size_t j = 0; j <= i; ++j){
+      set<int> s = {};
+      s.insert({v[0]});
+      for(size_t k =0; k != v.size(); ++k){
+        if(s.size() <= j)
+          s.insert(v[k]);
+        else{
+          subsets.insert(s);
+          set<int> s = {};
+          s.insert(v[0]);
+        }
+
+      }
+
+    }
+  }
+
+
+
+
+  void loop(vector<int>::iterator begin, vector<int>::iterator end, set<set<int>> &subsets){
+    ++count;
+    set<int> s;
+    auto iter = begin;
+    for(; iter != end; ++iter){
+      //cout << *iter << " ";
+      s.insert(*iter);
+      subsets.insert(s);
+      loop(iter + 1, end, subsets);
+    }
+    subsets.insert(s);
+  }
+
+  int count = 0;
+  vector<int> orig{1, 2,3, 4, 5, };
+  int n = 0;
+  int j = 5;
+
+  void loop(vector<int>::iterator begin, vector<int>::iterator end, set<set<int>> &subsets){
+    ++count;
+    set<int> s;
+    auto iter = begin;
+    for(; iter != end; ++iter){
+      //cout << *iter << " ";
+      s.insert(*iter);
+      for(auto i = orig.begin() + n; i < orig.end(); i += 4){
+        s.insert(*i);
+
+      }
+      subset2s.insert(s);
+      loop(iter + 1, end, subsets);
+      if(n <= 5)
+        ++n;
+    }
+    subsets.insert(s);
+  }
+
+  void element(vector<int> v){
+  ++n;
+  if(n >= 5)
+    return;
+  for(size_t i = 0; i != v.size(); ++i){
+    cout << v[i] << " ";
+    //element(v);
+  }
+  cout << endl;
+  element(v);
+}
+
+
+
+apt-get install ca-certificates curl gnupg lsb-release
