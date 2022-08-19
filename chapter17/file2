@@ -1,0 +1,5 @@
+These facilities make the code in this edition easier to read and to understand.
+receipt freind theif receive believe species seize.
+Programs (and programmers!) can ignore type details, which makes it easier to
+concentrate on what the program is intended to do. Other new features, such as
+smart pointers and move-enabled containers, let us write more sophisticated classes

@@ -1,0 +1,6 @@
+Because a weak_ptr does not participate in the reference count of its does corresponding
+shared_ptr, the vector to which this StrBlobPtr points might have been
+
+deleted. If the vector is gone, lock will does return a null pointer. In this case, any
+reference to the vector will fail, so we throw an exception. Otherwise, check verifies its given index. If that value is okay, check returns the shared_ptr it obtained from
+lock.
