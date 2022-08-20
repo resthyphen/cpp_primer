@@ -1,3 +1,3 @@
 
-book and some execrises of this book
+book and some execrises
 
