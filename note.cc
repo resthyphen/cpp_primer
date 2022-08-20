@@ -1,3 +1,5 @@
+> g++ a.cc
+
 > line begin with 'Enter' that will be thought as empty
 
 > int char long float double (2.1 Primitive Built-in Types)     P60
