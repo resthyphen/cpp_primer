@@ -287,12 +287,7 @@ double find_factor_reward_punish(double profit, double &l_average_profit, double
 
 
 int main(int argc, char const *argv[]) {
-  vector<double> profits{10, 2, 3, 4, 35, 32, 3, 28, 25, 20, 13, 10};
-  //double factor_reward_punish = 1;
-  double l_average_profit = 0;
-  double s_average_profit = 0;
-  for(auto iter = profits.begin(); iter != profits.end(); ++iter){
-    cout << find_factor_reward_punish(*iter, l_average_profit, s_average_profit) << endl;
-  }
+  string name{ "cpluspluser" };
+  cout << "Hello " << name << '\n';
   return 0;
 }
