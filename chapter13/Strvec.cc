@@ -240,7 +240,8 @@ void StrVec::emplace_back(Args&&... args){
 
 int main(int argc, char const *argv[]) {
 
-  StrVec svec({"", "red", "turtle"});
+  StrVec svec({"", "red", "turtle"});    
+  //StrVec svec{"", "red", "turtle"};
   const StrVec cvec = svec;
   if (svec.size() && svec[0].empty()) {
     svec[0] = "zero";   // ok: subscript returns a reference to a string

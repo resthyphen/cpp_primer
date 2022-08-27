@@ -640,3 +640,5 @@ where a library string is expected
 > 6.2.4. Array Parameters   P283
 
 > & or &&, indicating that this may point to an rvalue or lvalue      P677
+
+> string name{ "cpluspluser" };       //std::initializer_list to initialize the string with 
