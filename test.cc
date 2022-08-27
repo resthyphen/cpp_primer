@@ -91,6 +91,7 @@ using std::bad_alloc;
 using std::bad_cast;
 using std::function;
 using std::mem_fn;
+using std::ofstream;
 
 class NoDefault {
 public:
@@ -284,10 +285,15 @@ double find_factor_reward_punish(double profit, double &l_average_profit, double
     return factor_reward_punish;
 }
 
+void func(std::ostream& os, const std::string& str) {
+    os << str << '\n';
+}
 
 
 int main(int argc, char const *argv[]) {
-  string name{ "cpluspluser" };
-  cout << "Hello " << name << '\n';
+    ofstream outfile("output.txt", std::ios_base::trunc);
+    for(int i = 0; i < 1000000; ++i) {
+        func(outfile, "Hello world!");
+    }
   return 0;
 }
