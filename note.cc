@@ -142,6 +142,7 @@ exception types. 	??		P264
 > exercise6.18	P284
 
 > int main(int argc, char **argv)   indicating that argv points to a char*.		P289
+  int main(int argc, char *argv[])
     exercise 6.25		P290
     exercise 6.26
 
