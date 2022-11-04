@@ -643,3 +643,11 @@ where a library string is expected
 > & or &&, indicating that this may point to an rvalue or lvalue      P677
 
 > string name{ "cpluspluser" };       //std::initializer_list to initialize the string with 
+
+> Old-Style Casts
+    Depending on the types involved, an old-style cast has the same behavior as a
+    const_cast, a static_cast, or a reinterpret_cast. When we use an old-style
+    cast where a static_cast or a const_cast would be legal
+    
+    char *pc = (char*) ip; // ip is a pointer to int
+
