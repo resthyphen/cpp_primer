@@ -651,3 +651,6 @@ where a library string is expected
     
     char *pc = (char*) ip; // ip is a pointer to int
 
+
+> 18.2. Namespaces 			p962
+
