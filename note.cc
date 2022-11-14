@@ -206,6 +206,14 @@ initialization rules, which means that (by default) we cannot bind this to a con
 object (§ 2.4.2, p. 62). This fact, in turn, means that we cannot call an ordinary
 member function on a const object.      P337
 
+	std::string Sales_data::isbn(const Sales_data *const this)    //'this' is a const pointer to a const object
+	{ return this->isbn; }	 	
+	  ||
+	std::string isbn() const { return this->bookNo; }
+
+
+
+
 > 7.1.5. Copy, Assignment, and Destruction ??         P348
 
 > Exercise 7.32       P366
@@ -654,3 +662,6 @@ where a library string is expected
 
 > 18.2. Namespaces 			p962
 
+
+> 14.7. Member Access Operators			P704
+  The dereference (*) and arrow (->) operators	
