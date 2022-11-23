@@ -665,3 +665,6 @@ where a library string is expected
 
 > 14.7. Member Access Operators			P704
   The dereference (*) and arrow (->) operators	
+  
+> Table 16.1. Standard Type Transformation Templates		P844
+
