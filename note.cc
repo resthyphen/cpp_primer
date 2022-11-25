@@ -668,3 +668,4 @@ where a library string is expected
   
 > Table 16.1. Standard Type Transformation Templates		P844
 
+> StrVec(StrVec&&) noexcept;				P664
