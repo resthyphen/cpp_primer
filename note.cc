@@ -669,3 +669,7 @@ where a library string is expected
 > Table 16.1. Standard Type Transformation Templates		P844
 
 > StrVec(StrVec&&) noexcept;				P664
+
+> void flip1(void(*fcn)(int, int&), int t1, int t2);	 	P854
+  //filip1 takes function pointer agrument
+
