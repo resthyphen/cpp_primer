@@ -1,3 +1,5 @@
+> int main(int argc, char *argv[]){}
+
 > g++ a.cc
 
 > line begin with 'Enter' that will be thought as empty
