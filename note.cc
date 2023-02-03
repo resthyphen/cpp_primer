@@ -340,7 +340,7 @@ to allocate an array          p597
 > Exercise 13.13        P626
 
 > string dots(10, '.');                 // direct initialization
-  string s(dots);                       // direct initialization
+  string s(dots);                       // copy initialization
   string s2 = dots;                     // copy initialization
   string null_book = "9-999-99999-9";   // copy initialization
   string nines = string(100, '9');      // copy initialization            P618
