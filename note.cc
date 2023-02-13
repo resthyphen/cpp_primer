@@ -669,6 +669,7 @@ where a library string is expected
   The dereference (*) and arrow (->) operators	
   
 > Table 16.1. Standard Type Transformation Templates		P844
+    remove_reference template
 
 > StrVec(StrVec&&) noexcept;				P664
 
