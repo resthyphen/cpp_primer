@@ -676,3 +676,4 @@ where a library string is expected
 > void flip1(void(*fcn)(int, int&), int t1, int t2);	 	P854
   //filip1 takes function pointer agrument
 
+> 16.2.7. Forwarding				P853
