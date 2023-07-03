@@ -677,3 +677,11 @@ where a library string is expected
   //filip1 takes function pointer agrument
 
 > 16.2.7. Forwarding				P853
+
+
+> A variable declaration specifies the type and name of a variable.
+  a definition also allocates storage and may provide the variable with an initial value	P76
+
+> To share a const object among multiple files, you must define the variable as extern		P96
+
+> 19.8.3. Linkage Directives: extern "C"			P1048
