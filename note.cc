@@ -685,3 +685,5 @@ where a library string is expected
 > To share a const object among multiple files, you must define the variable as extern		P96
 
 > 19.8.3. Linkage Directives: extern "C"			P1048
+
+> template<>   //Class Template Specializations			P874
